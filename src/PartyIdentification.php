@@ -36,9 +36,12 @@ class PartyIdentification implements XmlSerializable
     public function xmlSerialize(Writer $writer)
     {
         $writer->write([
-            Schema::CBC . 'ID' => $this->id,
-            'attributes' => [
-                'schemaName' => 1
+            [
+                'name' => Schema::CBC . 'ID',
+                 'value' => $this->id,
+                'attributes' => [
+                    'schemaName' => 1
+                ]
             ]
         ]);
     }

@@ -19,9 +19,9 @@ class PartyIdentification implements XmlSerializable
 
     /**
      * @param string $id
-     * @return InvoiceLine
+     * @return PartyIdentification
      */
-    public function setId(?string $id): InvoiceLine
+    public function setId(?string $id): PartyIdentification
     {
         $this->id = $id;
         return $this;

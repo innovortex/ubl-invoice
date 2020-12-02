@@ -40,7 +40,7 @@ class PartyIdentification implements XmlSerializable
                 'name' => Schema::CBC . 'ID',
                 'value' => $this->id,
                 'attributes' => [
-                    'schemaName' => '1
+                    'schemaName' => '1'
                 ]
             ]
         ]);

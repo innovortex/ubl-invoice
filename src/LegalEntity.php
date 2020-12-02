@@ -8,6 +8,7 @@ use Sabre\Xml\XmlSerializable;
 class LegalEntity implements XmlSerializable
 {
     private $registrationName;
+    private $registrationAddress;
     private $companyId;
     private $companyIdAttributes;
 
@@ -51,6 +52,24 @@ class LegalEntity implements XmlSerializable
     }
 
     /**
+     * @return Address|null
+     */
+    public function getRegistrationAddress(): ?Address
+    {
+        return $this->registrationAddress;
+    }
+
+    /**
+     * @param Address $address
+     * @return LegalEntity
+     */
+    public function setRegistrationAddress(Address $address): LegalEntity
+    {
+        $this->registrationAddress = $address;
+        return $this;
+    }
+
+    /**
      * The xmlSerialize method is called during xml writing.
      *
      * @param Writer $writer
@@ -61,6 +80,13 @@ class LegalEntity implements XmlSerializable
         $writer->write([
             Schema::CBC . 'RegistrationName' => $this->registrationName,
         ]);
+
+        if ($this->registrationAddress !== null) {
+            $writer->write([
+                Schema::CAC . 'RegistrationAddress' => $this->registrationAddress
+            ]);
+        }
+
         if ($this->companyId !== null) {
             $writer->write([
                 [

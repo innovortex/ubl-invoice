@@ -149,12 +149,19 @@ class Party implements XmlSerializable
      */
     public function xmlSerialize(Writer $writer)
     {
-        $writer->write([
-            Schema::CAC . 'PartyName' => [
-                Schema::CBC . 'Name' => $this->name
-            ],
-            Schema::CAC . 'PostalAddress' => $this->postalAddress
-        ]);
+        if($this->name !== null) {
+            $writer->write([
+                Schema::CAC . 'PartyName' => [
+                    Schema::CBC . 'Name' => $this->name
+                ],
+            ]);
+        }
+
+        if ($this->postalAddress !== null) {
+            $writer->write([
+                Schema::CAC . 'PostalAddress' => $this->postalAddress
+            ]);
+        }
 
         if ($this->partyIdentification !== null) {
             $writer->write([

@@ -13,6 +13,7 @@ class Party implements XmlSerializable
     private $contact;
     private $partyTaxScheme;
     private $legalEntity;
+    private $partyIdentification;
 
     /**
      * @return string
@@ -123,6 +124,24 @@ class Party implements XmlSerializable
     }
 
     /**
+     * @return Contact
+     */
+    public function getPartyIdentification(): ?PartyIdentification
+    {
+        return $this->partyIdentification;
+    }
+
+    /**
+     * @param Contact $contact
+     * @return Party
+     */
+    public function setPartyIdentification(?PartyIdentification $identification): Party
+    {
+        $this->partyIdentification = $identification;
+        return $this;
+    }
+
+    /**
      * The xmlSerialize method is called during xml writing.
      *
      * @param Writer $writer
@@ -136,6 +155,12 @@ class Party implements XmlSerializable
             ],
             Schema::CAC . 'PostalAddress' => $this->postalAddress
         ]);
+
+        if ($this->partyIdentification !== null) {
+            $writer->write([
+                Schema::CAC . 'PartyIdentification' => $this->partyIdentification
+            ]);
+        }
 
         if ($this->physicalLocation !== null) {
             $writer->write([

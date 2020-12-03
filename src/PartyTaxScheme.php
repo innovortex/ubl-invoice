@@ -12,6 +12,7 @@ class PartyTaxScheme implements XmlSerializable
     private $registrationName;
     private $companyId;
     private $taxScheme;
+    private $exemptionReason;
 
     /**
      * @return string
@@ -68,6 +69,26 @@ class PartyTaxScheme implements XmlSerializable
         return $this;
     }
 
+
+    /**
+     * @param TaxScheme $taxScheme.
+     * @return mixed
+     */
+    public function getExemptionReason(): ?string
+    {
+        return $this->exemptionReason;
+    }
+
+    /**
+     * @param TaxScheme $taxScheme
+     * @return PartyTaxScheme
+     */
+    public function setExemptionReason(string $reason): PartyTaxScheme
+    {
+        $this->exemptionReason = $reason;
+        return $this;
+    }
+
     /**
      * The validate function that is called during xml writing to valid the data of the object.
      *
@@ -103,5 +124,11 @@ class PartyTaxScheme implements XmlSerializable
         $writer->write([
             Schema::CAC . 'TaxScheme' => $this->taxScheme
         ]);
+
+        if($this->exemptionReason !== null){
+            $writer->write([
+                Schema::CBC . 'ExemptionReason' => $this->exemptionReason
+            ]);
+        }
     }
 }

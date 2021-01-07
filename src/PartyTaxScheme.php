@@ -17,7 +17,7 @@ class PartyTaxScheme implements XmlSerializable
     /**
      * @return string
      */
-    public function getRegistrationName(): ?string
+    public function getRegistrationName()
     {
         return $this->registrationName;
     }
@@ -26,7 +26,7 @@ class PartyTaxScheme implements XmlSerializable
      * @param string $registrationName
      * @return PartyTaxScheme
      */
-    public function setRegistrationName($registrationName): PartyTaxScheme
+    public function setRegistrationName($registrationName)
     {
         $this->registrationName = $registrationName;
         return $this;
@@ -35,7 +35,7 @@ class PartyTaxScheme implements XmlSerializable
     /**
      * @return string
      */
-    public function getCompanyId(): ?string
+    public function getCompanyId()
     {
         return $this->companyId;
     }
@@ -44,7 +44,7 @@ class PartyTaxScheme implements XmlSerializable
      * @param string $companyId
      * @return PartyTaxScheme
      */
-    public function setCompanyId($companyId): PartyTaxScheme
+    public function setCompanyId($companyId)
     {
         $this->companyId = $companyId;
         return $this;
@@ -54,7 +54,7 @@ class PartyTaxScheme implements XmlSerializable
      * @param TaxScheme $taxScheme.
      * @return mixed
      */
-    public function getTaxScheme(): ?TaxScheme
+    public function getTaxScheme()
     {
         return $this->taxScheme;
     }
@@ -63,7 +63,7 @@ class PartyTaxScheme implements XmlSerializable
      * @param TaxScheme $taxScheme
      * @return PartyTaxScheme
      */
-    public function setTaxScheme(TaxScheme $taxScheme): PartyTaxScheme
+    public function setTaxScheme(TaxScheme $taxScheme)
     {
         $this->taxScheme = $taxScheme;
         return $this;
@@ -74,7 +74,7 @@ class PartyTaxScheme implements XmlSerializable
      * @param TaxScheme $taxScheme.
      * @return mixed
      */
-    public function getExemptionReason(): ?string
+    public function getExemptionReason()
     {
         return $this->exemptionReason;
     }
@@ -83,7 +83,7 @@ class PartyTaxScheme implements XmlSerializable
      * @param TaxScheme $taxScheme
      * @return PartyTaxScheme
      */
-    public function setExemptionReason(string $reason): PartyTaxScheme
+    public function setExemptionReason(string $reason)
     {
         $this->exemptionReason = $reason;
         return $this;

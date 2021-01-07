@@ -24,7 +24,7 @@ class Delivery implements XmlSerializable
      * @param DateTime $actualDeliveryDate
      * @return Delivery
      */
-    public function setActualDeliveryDate($actualDeliveryDate): Delivery
+    public function setActualDeliveryDate($actualDeliveryDate)
     {
         $this->actualDeliveryDate = $actualDeliveryDate;
         return $this;
@@ -42,7 +42,7 @@ class Delivery implements XmlSerializable
      * @param Address $deliveryLocation
      * @return Delivery
      */
-    public function setDeliveryLocation($deliveryLocation): Delivery
+    public function setDeliveryLocation($deliveryLocation)
     {
         $this->deliveryLocation = $deliveryLocation;
         return $this;
@@ -60,7 +60,7 @@ class Delivery implements XmlSerializable
      * @param Party $deliveryParty
      * @return Delivery
      */
-    public function setDeliveryParty($deliveryParty): Delivery
+    public function setDeliveryParty($deliveryParty)
     {
         $this->deliveryParty = $deliveryParty;
         return $this;

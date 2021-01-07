@@ -15,7 +15,7 @@ class InvoicePeriod implements XmlSerializable
     /**
      * @return DateTime
      */
-    public function getStartDate(): ?DateTime
+    public function getStartDate()
     {
         return $this->startDate;
     }
@@ -24,7 +24,7 @@ class InvoicePeriod implements XmlSerializable
      * @param DateTime $startDate
      * @return InvoicePeriod
      */
-    public function setStartDate(?DateTime $startDate): InvoicePeriod
+    public function setStartDate(?DateTime $startDate)
     {
         $this->startDate = $startDate;
         return $this;
@@ -33,7 +33,7 @@ class InvoicePeriod implements XmlSerializable
     /**
      * @return DateTime
      */
-    public function getEndDate(): ?DateTime
+    public function getEndDate()
     {
         return $this->endDate;
     }
@@ -42,7 +42,7 @@ class InvoicePeriod implements XmlSerializable
      * @param DateTime $endDate
      * @return InvoicePeriod
      */
-    public function setEndDate(?DateTime $endDate): InvoicePeriod
+    public function setEndDate(?DateTime $endDate)
     {
         $this->endDate = $endDate;
         return $this;

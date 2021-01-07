@@ -19,7 +19,7 @@ class AllowanceCharge implements XmlSerializable
     /**
      * @return bool
      */
-    public function isChargeIndicator(): bool
+    public function isChargeIndicator()
     {
         return $this->chargeIndicator;
     }
@@ -28,7 +28,7 @@ class AllowanceCharge implements XmlSerializable
      * @param bool $chargeIndicator
      * @return AllowanceCharge
      */
-    public function setChargeIndicator(bool $chargeIndicator): AllowanceCharge
+    public function setChargeIndicator(bool $chargeIndicator)
     {
         $this->chargeIndicator = $chargeIndicator;
         return $this;
@@ -37,7 +37,7 @@ class AllowanceCharge implements XmlSerializable
     /**
      * @return int
      */
-    public function getAllowanceChargeReasonCode(): ?int
+    public function getAllowanceChargeReasonCode()
     {
         return $this->allowanceChargeReasonCode;
     }
@@ -46,7 +46,7 @@ class AllowanceCharge implements XmlSerializable
      * @param int $allowanceChargeReasonCode
      * @return AllowanceCharge
      */
-    public function setAllowanceChargeReasonCode(?int $allowanceChargeReasonCode): AllowanceCharge
+    public function setAllowanceChargeReasonCode(?int $allowanceChargeReasonCode)
     {
         $this->allowanceChargeReasonCode = $allowanceChargeReasonCode;
         return $this;
@@ -55,7 +55,7 @@ class AllowanceCharge implements XmlSerializable
     /**
      * @return string
      */
-    public function getAllowanceChargeReason(): ?string
+    public function getAllowanceChargeReason()
     {
         return $this->allowanceChargeReason;
     }
@@ -64,7 +64,7 @@ class AllowanceCharge implements XmlSerializable
      * @param string $allowanceChargeReason
      * @return AllowanceCharge
      */
-    public function setAllowanceChargeReason(?string $allowanceChargeReason): AllowanceCharge
+    public function setAllowanceChargeReason(?string $allowanceChargeReason)
     {
         $this->allowanceChargeReason = $allowanceChargeReason;
         return $this;
@@ -73,7 +73,7 @@ class AllowanceCharge implements XmlSerializable
     /**
      * @return int
      */
-    public function getMultiplierFactorNumeric(): ?int
+    public function getMultiplierFactorNumeric()
     {
         return $this->multiplierFactorNumeric;
     }
@@ -82,7 +82,7 @@ class AllowanceCharge implements XmlSerializable
      * @param int $multiplierFactorNumeric
      * @return AllowanceCharge
      */
-    public function setMultiplierFactorNumeric(?int $multiplierFactorNumeric): AllowanceCharge
+    public function setMultiplierFactorNumeric(?int $multiplierFactorNumeric)
     {
         $this->multiplierFactorNumeric = $multiplierFactorNumeric;
         return $this;
@@ -91,7 +91,7 @@ class AllowanceCharge implements XmlSerializable
     /**
      * @return float
      */
-    public function getBaseAmount(): ?float
+    public function getBaseAmount()
     {
         return $this->baseAmount;
     }
@@ -100,7 +100,7 @@ class AllowanceCharge implements XmlSerializable
      * @param float $baseAmount
      * @return AllowanceCharge
      */
-    public function setBaseAmount(?float $baseAmount): AllowanceCharge
+    public function setBaseAmount(?float $baseAmount)
     {
         $this->baseAmount = $baseAmount;
         return $this;
@@ -109,7 +109,7 @@ class AllowanceCharge implements XmlSerializable
     /**
      * @return float
      */
-    public function getAmount(): ?float
+    public function getAmount()
     {
         return $this->amount;
     }
@@ -118,7 +118,7 @@ class AllowanceCharge implements XmlSerializable
      * @param float $amount
      * @return AllowanceCharge
      */
-    public function setAmount(?float $amount): AllowanceCharge
+    public function setAmount(?float $amount)
     {
         $this->amount = $amount;
         return $this;
@@ -127,7 +127,7 @@ class AllowanceCharge implements XmlSerializable
     /**
      * @return TaxCategory
      */
-    public function getTaxCategory(): ?TaxCategory
+    public function getTaxCategory()
     {
         return $this->taxCategory;
     }
@@ -136,7 +136,7 @@ class AllowanceCharge implements XmlSerializable
      * @param TaxCategory $taxCategory
      * @return AllowanceCharge
      */
-    public function setTaxCategory(?TaxCategory $taxCategory): AllowanceCharge
+    public function setTaxCategory(?TaxCategory $taxCategory)
     {
         $this->taxCategory = $taxCategory;
         return $this;
@@ -145,7 +145,7 @@ class AllowanceCharge implements XmlSerializable
     /**
      * @return TaxCategory
      */
-    public function getTaxtotal(): ?TaxTotal
+    public function getTaxtotal()
     {
         return $this->taxTotal;
     }
@@ -154,7 +154,7 @@ class AllowanceCharge implements XmlSerializable
      * @param TaxTotal $taxTotal
      * @return AllowanceCharge
      */
-    public function setTaxtotal(?TaxTotal $taxTotal): AllowanceCharge
+    public function setTaxtotal(?TaxTotal $taxTotal)
     {
         $this->taxTotal = $taxTotal;
         return $this;

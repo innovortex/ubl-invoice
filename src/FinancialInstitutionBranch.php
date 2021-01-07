@@ -12,7 +12,7 @@ class FinancialInstitutionBranch implements XmlSerializable
     /**
      * @return string
      */
-    public function getId(): ?string
+    public function getId()
     {
         return $this->id;
     }
@@ -21,7 +21,7 @@ class FinancialInstitutionBranch implements XmlSerializable
      * @param string $id
      * @return FinancialInstitutionBranch
      */
-    public function setId(?string $id): FinancialInstitutionBranch
+    public function setId(?string $id)
     {
         $this->id = $id;
         return $this;

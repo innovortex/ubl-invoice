@@ -16,7 +16,7 @@ class LegalMonetaryTotal implements XmlSerializable
     /**
      * @return float
      */
-    public function getLineExtensionAmount(): ?float
+    public function getLineExtensionAmount()
     {
         return $this->lineExtensionAmount;
     }
@@ -25,7 +25,7 @@ class LegalMonetaryTotal implements XmlSerializable
      * @param float $lineExtensionAmount
      * @return LegalMonetaryTotal
      */
-    public function setLineExtensionAmount(?float $lineExtensionAmount): LegalMonetaryTotal
+    public function setLineExtensionAmount(?float $lineExtensionAmount)
     {
         $this->lineExtensionAmount = $lineExtensionAmount;
         return $this;
@@ -34,7 +34,7 @@ class LegalMonetaryTotal implements XmlSerializable
     /**
      * @return float
      */
-    public function getTaxExclusiveAmount(): ?float
+    public function getTaxExclusiveAmount()
     {
         return $this->taxExclusiveAmount;
     }
@@ -43,7 +43,7 @@ class LegalMonetaryTotal implements XmlSerializable
      * @param float $taxExclusiveAmount
      * @return LegalMonetaryTotal
      */
-    public function setTaxExclusiveAmount(?float $taxExclusiveAmount): LegalMonetaryTotal
+    public function setTaxExclusiveAmount(?float $taxExclusiveAmount)
     {
         $this->taxExclusiveAmount = $taxExclusiveAmount;
         return $this;
@@ -52,7 +52,7 @@ class LegalMonetaryTotal implements XmlSerializable
     /**
      * @return float
      */
-    public function getTaxInclusiveAmount(): ?float
+    public function getTaxInclusiveAmount()
     {
         return $this->taxInclusiveAmount;
     }
@@ -61,7 +61,7 @@ class LegalMonetaryTotal implements XmlSerializable
      * @param float $taxInclusiveAmount
      * @return LegalMonetaryTotal
      */
-    public function setTaxInclusiveAmount(?float $taxInclusiveAmount): LegalMonetaryTotal
+    public function setTaxInclusiveAmount(?float $taxInclusiveAmount)
     {
         $this->taxInclusiveAmount = $taxInclusiveAmount;
         return $this;
@@ -70,7 +70,7 @@ class LegalMonetaryTotal implements XmlSerializable
     /**
      * @return float
      */
-    public function getAllowanceTotalAmount(): ?float
+    public function getAllowanceTotalAmount()
     {
         return $this->allowanceTotalAmount;
     }
@@ -79,7 +79,7 @@ class LegalMonetaryTotal implements XmlSerializable
      * @param float $allowanceTotalAmount
      * @return LegalMonetaryTotal
      */
-    public function setAllowanceTotalAmount(?float $allowanceTotalAmount): LegalMonetaryTotal
+    public function setAllowanceTotalAmount(?float $allowanceTotalAmount)
     {
         $this->allowanceTotalAmount = $allowanceTotalAmount;
         return $this;
@@ -88,7 +88,7 @@ class LegalMonetaryTotal implements XmlSerializable
     /**
      * @return float
      */
-    public function getPayableAmount(): ?float
+    public function getPayableAmount()
     {
         return $this->payableAmount;
     }
@@ -97,7 +97,7 @@ class LegalMonetaryTotal implements XmlSerializable
      * @param float $payableAmount
      * @return LegalMonetaryTotal
      */
-    public function setPayableAmount(?float $payableAmount): LegalMonetaryTotal
+    public function setPayableAmount(?float $payableAmount)
     {
         $this->payableAmount = $payableAmount;
         return $this;

@@ -16,7 +16,7 @@ class Attachment implements XmlSerializable
      * @throws Exception exception when the mime type cannot be determined
      * @return string
      */
-    public function getFileMimeType(): string
+    public function getFileMimeType()
     {
         if (($mime_type = mime_content_type($this->filePath)) !== false) {
             return $mime_type;
@@ -28,7 +28,7 @@ class Attachment implements XmlSerializable
     /**
      * @return string
      */
-    public function getFilePath(): ?string
+    public function getFilePath()
     {
         return $this->filePath;
     }
@@ -37,7 +37,7 @@ class Attachment implements XmlSerializable
      * @param string $filePath
      * @return Attachment
      */
-    public function setFilePath(string $filePath): Attachment
+    public function setFilePath(string $filePath)
     {
         $this->filePath = $filePath;
         return $this;

@@ -14,7 +14,7 @@ class Price implements XmlSerializable
     /**
      * @return float
      */
-    public function getPriceAmount(): ?float
+    public function getPriceAmount()
     {
         return $this->priceAmount;
     }
@@ -23,7 +23,7 @@ class Price implements XmlSerializable
      * @param float $priceAmount
      * @return Price
      */
-    public function setPriceAmount(?float $priceAmount): Price
+    public function setPriceAmount(?float $priceAmount)
     {
         $this->priceAmount = $priceAmount;
         return $this;
@@ -32,7 +32,7 @@ class Price implements XmlSerializable
     /**
      * @return float
      */
-    public function getBaseQuantity(): ?float
+    public function getBaseQuantity()
     {
         return $this->baseQuantity;
     }
@@ -41,7 +41,7 @@ class Price implements XmlSerializable
      * @param float $baseQuantity
      * @return Price
      */
-    public function setBaseQuantity(?float $baseQuantity): Price
+    public function setBaseQuantity(?float $baseQuantity)
     {
         $this->baseQuantity = $baseQuantity;
         return $this;
@@ -50,7 +50,7 @@ class Price implements XmlSerializable
     /**
      * @return string
      */
-    public function getUnitCode(): ?string
+    public function getUnitCode()
     {
         return $this->unitCode;
     }
@@ -60,7 +60,7 @@ class Price implements XmlSerializable
      * See also: src/UnitCode.php
      * @return Price
      */
-    public function setUnitCode(?string $unitCode): Price
+    public function setUnitCode(?string $unitCode)
     {
         $this->unitCode = $unitCode;
         return $this;

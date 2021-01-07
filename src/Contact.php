@@ -15,7 +15,7 @@ class Contact implements XmlSerializable
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName()
     {
         return $this->name;
     }
@@ -24,7 +24,7 @@ class Contact implements XmlSerializable
      * @param mixed $name
      * @return Contact
      */
-    public function setName($name): Contact
+    public function setName($name)
     {
         $this->name = $name;
         return $this;
@@ -33,7 +33,7 @@ class Contact implements XmlSerializable
     /**
      * @return mixed
      */
-    public function getTelephone(): ?string
+    public function getTelephone()
     {
         return $this->telephone;
     }
@@ -42,7 +42,7 @@ class Contact implements XmlSerializable
      * @param string $telephone
      * @return Contact
      */
-    public function setTelephone(?string $telephone): Contact
+    public function setTelephone(?string $telephone)
     {
         $this->telephone = $telephone;
         return $this;
@@ -51,7 +51,7 @@ class Contact implements XmlSerializable
     /**
      * @return string
      */
-    public function getTelefax(): ?string
+    public function getTelefax()
     {
         return $this->telefax;
     }
@@ -60,7 +60,7 @@ class Contact implements XmlSerializable
      * @param string $telefax
      * @return Contact
      */
-    public function setTelefax(?string $telefax): Contact
+    public function setTelefax(?string $telefax)
     {
         $this->telefax = $telefax;
         return $this;
@@ -69,7 +69,7 @@ class Contact implements XmlSerializable
     /**
      * @return string
      */
-    public function getElectronicMail(): ?string
+    public function getElectronicMail()
     {
         return $this->electronicMail;
     }
@@ -78,7 +78,7 @@ class Contact implements XmlSerializable
      * @param string $electronicMail
      * @return Contact
      */
-    public function setElectronicMail(?string $electronicMail): Contact
+    public function setElectronicMail(?string $electronicMail)
     {
         $this->electronicMail = $electronicMail;
         return $this;

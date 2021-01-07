@@ -15,7 +15,7 @@ class TaxTotal implements XmlSerializable
     /**
      * @return mixed
      */
-    public function getTaxAmount(): ?float
+    public function getTaxAmount()
     {
         return $this->taxAmount;
     }
@@ -24,7 +24,7 @@ class TaxTotal implements XmlSerializable
      * @param mixed $taxAmount
      * @return TaxTotal
      */
-    public function setTaxAmount(?float $taxAmount): TaxTotal
+    public function setTaxAmount(?float $taxAmount)
     {
         $this->taxAmount = $taxAmount;
         return $this;
@@ -33,7 +33,7 @@ class TaxTotal implements XmlSerializable
     /**
      * @return array
      */
-    public function getTaxSubTotals(): array
+    public function getTaxSubTotals()
     {
         return $this->taxSubTotals;
     }
@@ -42,7 +42,7 @@ class TaxTotal implements XmlSerializable
      * @param TaxSubTotal $taxSubTotal
      * @return TaxTotal
      */
-    public function addTaxSubTotal(TaxSubTotal $taxSubTotal): TaxTotal
+    public function addTaxSubTotal(TaxSubTotal $taxSubTotal)
     {
         $this->taxSubTotals[] = $taxSubTotal;
         return $this;
@@ -66,7 +66,7 @@ class TaxTotal implements XmlSerializable
      * @param Writer $writer
      * @return void
      */
-    public function xmlSerialize(Writer $writer): void
+    public function xmlSerialize(Writer $writer)
     {
         $this->validate();
 

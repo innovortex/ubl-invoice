@@ -13,7 +13,7 @@ class OrderReference implements XmlSerializable
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -22,7 +22,7 @@ class OrderReference implements XmlSerializable
      * @param string $id
      * @return OrderReference
      */
-    public function setId(string $id): OrderReference
+    public function setId(string $id)
     {
         $this->id = $id;
         return $this;
@@ -31,7 +31,7 @@ class OrderReference implements XmlSerializable
     /**
      * @return string
      */
-    public function getSalesOrderId(): string
+    public function getSalesOrderId()
     {
         return $this->salesOrderId;
     }
@@ -40,7 +40,7 @@ class OrderReference implements XmlSerializable
      * @param string $salesOrderId
      * @return OrderReference
      */
-    public function setSalesOrderId(string $salesOrderId): OrderReference
+    public function setSalesOrderId(string $salesOrderId)
     {
         $this->salesOrderId = $salesOrderId;
         return $this;

@@ -12,7 +12,7 @@ class AccountingContact implements XmlSerializable
     /**
      * @return string
      */
-    public function getId(): ?string
+    public function getId()
     {
         return $this->id;
     }
@@ -21,7 +21,7 @@ class AccountingContact implements XmlSerializable
      * @param string $id
      * @return AdditionalDocumentReference
      */
-    public function setId(string $id): AccountingContact
+    public function setId(string $id)
     {
         $this->id = $id;
         return $this;

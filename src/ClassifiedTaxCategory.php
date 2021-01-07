@@ -23,7 +23,7 @@ class ClassifiedTaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getId(): ?string
+    public function getId()
     {
         if (!empty($this->id)) {
             return $this->id;
@@ -46,7 +46,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param string $id
      * @return ClassifiedTaxCategory
      */
-    public function setId(?string $id): ClassifiedTaxCategory
+    public function setId(?string $id)
     {
         $this->id = $id;
         return $this;
@@ -55,7 +55,7 @@ class ClassifiedTaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName()
     {
         return $this->name;
     }
@@ -64,7 +64,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param string $name
      * @return ClassifiedTaxCategory
      */
-    public function setName(?string $name): ClassifiedTaxCategory
+    public function setName(?string $name)
     {
         $this->name = $name;
         return $this;
@@ -73,7 +73,7 @@ class ClassifiedTaxCategory implements XmlSerializable
     /**
      * @return float
      */
-    public function getPercent(): ?float
+    public function getPercent()
     {
         return $this->percent;
     }
@@ -82,7 +82,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param float $percent
      * @return ClassifiedTaxCategory
      */
-    public function setPercent(?float $percent): ClassifiedTaxCategory
+    public function setPercent(?float $percent)
     {
         $this->percent = $percent;
         return $this;
@@ -91,7 +91,7 @@ class ClassifiedTaxCategory implements XmlSerializable
     /**
      * @return TaxScheme
      */
-    public function getTaxScheme(): ?TaxScheme
+    public function getTaxScheme()
     {
         return $this->taxScheme;
     }
@@ -100,7 +100,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param TaxScheme $taxScheme
      * @return ClassifiedTaxCategory
      */
-    public function setTaxScheme(?TaxScheme $taxScheme): ClassifiedTaxCategory
+    public function setTaxScheme(?TaxScheme $taxScheme)
     {
         $this->taxScheme = $taxScheme;
         return $this;
@@ -109,7 +109,7 @@ class ClassifiedTaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getSchemeID(): ?string
+    public function getSchemeID()
     {
         return $this->schemeID;
     }
@@ -118,7 +118,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param string $id
      * @return ClassifiedTaxCategory
      */
-    public function setSchemeID(?string $id): ClassifiedTaxCategory
+    public function setSchemeID(?string $id)
     {
         $this->schemeID = $id;
         return $this;
@@ -127,7 +127,7 @@ class ClassifiedTaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getSchemeName(): ?string
+    public function getSchemeName()
     {
         return $this->schemeName;
     }
@@ -136,7 +136,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param string $name
      * @return ClassifiedTaxCategory
      */
-    public function setSchemeName(?string $name): ClassifiedTaxCategory
+    public function setSchemeName(?string $name)
     {
         $this->schemeName = $name;
         return $this;

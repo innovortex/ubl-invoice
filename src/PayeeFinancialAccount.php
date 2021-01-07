@@ -15,7 +15,7 @@ class PayeeFinancialAccount implements XmlSerializable
     /**
      * @return string
      */
-    public function getId(): ?string
+    public function getId()
     {
         return $this->id;
     }
@@ -24,7 +24,7 @@ class PayeeFinancialAccount implements XmlSerializable
      * @param string $id
      * @return PayeeFinancialAccount
      */
-    public function setId(?string $id): PayeeFinancialAccount
+    public function setId(?string $id)
     {
         $this->id = $id;
         return $this;
@@ -33,7 +33,7 @@ class PayeeFinancialAccount implements XmlSerializable
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName()
     {
         return $this->name;
     }
@@ -42,7 +42,7 @@ class PayeeFinancialAccount implements XmlSerializable
      * @param string $name
      * @return PayeeFinancialAccount
      */
-    public function setName(?string $name): PayeeFinancialAccount
+    public function setName(?string $name)
     {
         $this->name = $name;
         return $this;
@@ -51,7 +51,7 @@ class PayeeFinancialAccount implements XmlSerializable
     /**
      * @return FinancialInstitutionBranch
      */
-    public function getFinancialInstitutionBranch(): ?FinancialInstitutionBranch
+    public function getFinancialInstitutionBranch()
     {
         return $this->financialInstitutionBranch;
     }
@@ -60,7 +60,7 @@ class PayeeFinancialAccount implements XmlSerializable
      * @param FinancialInstitutionBranch $financialInstitutionBranch
      * @return PayeeFinancialAccount
      */
-    public function setFinancialInstitutionBranch(?FinancialInstitutionBranch $financialInstitutionBranch): PayeeFinancialAccount
+    public function setFinancialInstitutionBranch(?FinancialInstitutionBranch $financialInstitutionBranch)
     {
         $this->financialInstitutionBranch = $financialInstitutionBranch;
         return $this;

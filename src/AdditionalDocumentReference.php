@@ -14,7 +14,7 @@ class AdditionalDocumentReference implements XmlSerializable
     /**
      * @return string
      */
-    public function getId(): ?string
+    public function getId()
     {
         return $this->id;
     }
@@ -23,7 +23,7 @@ class AdditionalDocumentReference implements XmlSerializable
      * @param string $id
      * @return AdditionalDocumentReference
      */
-    public function setId(string $id): AdditionalDocumentReference
+    public function setId(string $id)
     {
         $this->id = $id;
         return $this;
@@ -32,7 +32,7 @@ class AdditionalDocumentReference implements XmlSerializable
     /**
      * @return string
      */
-    public function getDocumentType(): ?string
+    public function getDocumentType()
     {
         return $this->documentType;
     }
@@ -41,7 +41,7 @@ class AdditionalDocumentReference implements XmlSerializable
      * @param string $documentType
      * @return AdditionalDocumentReference
      */
-    public function setDocumentType(string $documentType): AdditionalDocumentReference
+    public function setDocumentType(string $documentType)
     {
         $this->documentType = $documentType;
         return $this;
@@ -50,7 +50,7 @@ class AdditionalDocumentReference implements XmlSerializable
     /**
      * @return Attachment
      */
-    public function getAttachment(): ?Attachment
+    public function getAttachment()
     {
         return $this->attachment;
     }
@@ -59,7 +59,7 @@ class AdditionalDocumentReference implements XmlSerializable
      * @param Attachment $attachment
      * @return AdditionalDocumentReference
      */
-    public function setAttachment(Attachment $attachment): AdditionalDocumentReference
+    public function setAttachment(Attachment $attachment)
     {
         $this->attachment = $attachment;
         return $this;

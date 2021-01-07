@@ -16,7 +16,7 @@ class Item implements XmlSerializable
     /**
      * @return string
      */
-    public function getDescription(): ?string
+    public function getDescription()
     {
         return $this->description;
     }
@@ -25,7 +25,7 @@ class Item implements XmlSerializable
      * @param string $description
      * @return Item
      */
-    public function setDescription(?string $description): Item
+    public function setDescription(?string $description)
     {
         $this->description = $description;
         return $this;
@@ -34,7 +34,7 @@ class Item implements XmlSerializable
     /**
      * @return mixed
      */
-    public function getName(): ?string
+    public function getName()
     {
         return $this->name;
     }
@@ -43,7 +43,7 @@ class Item implements XmlSerializable
      * @param mixed $name
      * @return Item
      */
-    public function setName(?string $name): Item
+    public function setName(?string $name)
     {
         $this->name = $name;
         return $this;
@@ -52,7 +52,7 @@ class Item implements XmlSerializable
     /**
      * @return mixed
      */
-    public function getSellersItemIdentification(): ?string
+    public function getSellersItemIdentification()
     {
         return $this->sellersItemIdentification;
     }
@@ -61,7 +61,7 @@ class Item implements XmlSerializable
      * @param mixed $sellersItemIdentification
      * @return Item
      */
-    public function setSellersItemIdentification(?string $sellersItemIdentification): Item
+    public function setSellersItemIdentification(?string $sellersItemIdentification)
     {
         $this->sellersItemIdentification = $sellersItemIdentification;
         return $this;
@@ -70,7 +70,7 @@ class Item implements XmlSerializable
     /**
      * @return mixed
      */
-    public function getBuyersItemIdentification(): ?string
+    public function getBuyersItemIdentification()
     {
         return $this->buyersItemIdentification;
     }
@@ -79,7 +79,7 @@ class Item implements XmlSerializable
      * @param mixed $buyersItemIdentification
      * @return Item
      */
-    public function setBuyersItemIdentification(?string $buyersItemIdentification): Item
+    public function setBuyersItemIdentification(?string $buyersItemIdentification)
     {
         $this->buyersItemIdentification = $buyersItemIdentification;
         return $this;
@@ -88,7 +88,7 @@ class Item implements XmlSerializable
     /**
      * @return ClassifiedTaxCategory
      */
-    public function getClassifiedTaxCategory(): ?ClassifiedTaxCategory
+    public function getClassifiedTaxCategory()
     {
         return $this->classifiedTaxCategory;
     }
@@ -97,7 +97,7 @@ class Item implements XmlSerializable
      * @param ClassifiedTaxCategory $classifiedTaxCategory
      * @return Item
      */
-    public function setClassifiedTaxCategory(?ClassifiedTaxCategory $classifiedTaxCategory): Item
+    public function setClassifiedTaxCategory(?ClassifiedTaxCategory $classifiedTaxCategory)
     {
         $this->classifiedTaxCategory = $classifiedTaxCategory;
         return $this;

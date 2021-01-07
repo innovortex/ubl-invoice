@@ -22,7 +22,7 @@ class PaymentMeans implements XmlSerializable
     /**
      * @return string
      */
-    public function getPaymentMeansCode(): ?int
+    public function getPaymentMeansCode()
     {
         return $this->paymentMeansCode;
     }
@@ -31,7 +31,7 @@ class PaymentMeans implements XmlSerializable
      * @param string $paymentMeansCode
      * @return PaymentMeans
      */
-    public function setPaymentMeansCode(?int $paymentMeansCode, $attributes = null): PaymentMeans
+    public function setPaymentMeansCode(?int $paymentMeansCode, $attributes = null)
     {
         $this->paymentMeansCode = $paymentMeansCode;
         if (isset($attributes)) {
@@ -43,7 +43,7 @@ class PaymentMeans implements XmlSerializable
     /**
      * @return DateTime
      */
-    public function getPaymentDueDate(): ?DateTime
+    public function getPaymentDueDate()
     {
         return $this->paymentDueDate;
     }
@@ -52,7 +52,7 @@ class PaymentMeans implements XmlSerializable
      * @param DateTime $paymentDueDate
      * @return PaymentMeans
      */
-    public function setPaymentDueDate(?DateTime $paymentDueDate): PaymentMeans
+    public function setPaymentDueDate(?DateTime $paymentDueDate)
     {
         $this->paymentDueDate = $paymentDueDate;
         return $this;
@@ -61,7 +61,7 @@ class PaymentMeans implements XmlSerializable
     /**
      * @return string
      */
-    public function getInstructionId(): ?string
+    public function getInstructionId()
     {
         return $this->instructionId;
     }
@@ -70,7 +70,7 @@ class PaymentMeans implements XmlSerializable
      * @param string $instructionId
      * @return PaymentMeans
      */
-    public function setInstructionId(?string $instructionId): PaymentMeans
+    public function setInstructionId(?string $instructionId)
     {
         $this->instructionId = $instructionId;
         return $this;
@@ -79,7 +79,7 @@ class PaymentMeans implements XmlSerializable
     /**
      * @return string
      */
-    public function getInstructionNote(): ?string
+    public function getInstructionNote()
     {
         return $this->instructionNote;
     }
@@ -88,7 +88,7 @@ class PaymentMeans implements XmlSerializable
      * @param string $instructionNote
      * @return PaymentMeans
      */
-    public function setInstructionNote(?string $instructionNote): PaymentMeans
+    public function setInstructionNote(?string $instructionNote)
     {
         $this->instructionNote = $instructionNote;
         return $this;
@@ -97,7 +97,7 @@ class PaymentMeans implements XmlSerializable
     /**
      * @return string
      */
-    public function getPaymentId(): ?string
+    public function getPaymentId()
     {
         return $this->paymentId;
     }
@@ -106,7 +106,7 @@ class PaymentMeans implements XmlSerializable
      * @param string $paymentId
      * @return PaymentMeans
      */
-    public function setPaymentId(?string $paymentId): PaymentMeans
+    public function setPaymentId(?string $paymentId)
     {
         $this->paymentId = $paymentId;
         return $this;
@@ -115,7 +115,7 @@ class PaymentMeans implements XmlSerializable
     /**
      * @return mixed
      */
-    public function getPayeeFinancialAccount(): ?PayeeFinancialAccount
+    public function getPayeeFinancialAccount()
     {
         return $this->payeeFinancialAccount;
     }
@@ -124,7 +124,7 @@ class PaymentMeans implements XmlSerializable
      * @param mixed $payeeFinancialAccount
      * @return PaymentMeans
      */
-    public function setPayeeFinancialAccount(?PayeeFinancialAccount $payeeFinancialAccount): PaymentMeans
+    public function setPayeeFinancialAccount(?PayeeFinancialAccount $payeeFinancialAccount)
     {
         $this->payeeFinancialAccount = $payeeFinancialAccount;
         return $this;

@@ -15,7 +15,7 @@ class LegalEntity implements XmlSerializable
     /**
      * @return string
      */
-    public function getRegistrationName(): ?string
+    public function getRegistrationName()
     {
         return $this->registrationName;
     }
@@ -24,7 +24,7 @@ class LegalEntity implements XmlSerializable
      * @param string $registrationName
      * @return LegalEntity
      */
-    public function setRegistrationName(?string $registrationName): LegalEntity
+    public function setRegistrationName(?string $registrationName)
     {
         $this->registrationName = $registrationName;
         return $this;
@@ -33,7 +33,7 @@ class LegalEntity implements XmlSerializable
     /**
      * @return string
      */
-    public function getCompanyId(): ?string
+    public function getCompanyId()
     {
         return $this->companyId;
     }
@@ -42,7 +42,7 @@ class LegalEntity implements XmlSerializable
      * @param string $companyId
      * @return LegalEntity
      */
-    public function setCompanyId(?string $companyId, $attributes = null): LegalEntity
+    public function setCompanyId(?string $companyId, $attributes = null)
     {
         $this->companyId = $companyId;
         if (isset($attributes)) {
@@ -54,7 +54,7 @@ class LegalEntity implements XmlSerializable
     /**
      * @return Address|null
      */
-    public function getRegistrationAddress(): ?Address
+    public function getRegistrationAddress()
     {
         return $this->registrationAddress;
     }
@@ -63,7 +63,7 @@ class LegalEntity implements XmlSerializable
      * @param Address $address
      * @return LegalEntity
      */
-    public function setRegistrationAddress(Address $address): LegalEntity
+    public function setRegistrationAddress(Address $address)
     {
         $this->registrationAddress = $address;
         return $this;

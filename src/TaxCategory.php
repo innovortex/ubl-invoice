@@ -25,7 +25,7 @@ class TaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getId(): ?string
+    public function getId()
     {
         if (!empty($this->id)) {
             return $this->id;
@@ -49,7 +49,7 @@ class TaxCategory implements XmlSerializable
      * @param array $attributes
      * @return TaxCategory
      */
-    public function setId(?string $id, $attributes = null): TaxCategory
+    public function setId(?string $id, $attributes = null)
     {
         $this->id = $id;
         if (isset($attributes)) {
@@ -61,7 +61,7 @@ class TaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName()
     {
         return $this->name;
     }
@@ -70,7 +70,7 @@ class TaxCategory implements XmlSerializable
      * @param string $name
      * @return TaxCategory
      */
-    public function setName(?string $name): TaxCategory
+    public function setName(?string $name)
     {
         $this->name = $name;
         return $this;
@@ -79,7 +79,7 @@ class TaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getPercent(): ?float
+    public function getPercent()
     {
         return $this->percent;
     }
@@ -88,7 +88,7 @@ class TaxCategory implements XmlSerializable
      * @param string $percent
      * @return TaxCategory
      */
-    public function setPercent(?float $percent): TaxCategory
+    public function setPercent(?float $percent)
     {
         $this->percent = $percent;
         return $this;
@@ -97,7 +97,7 @@ class TaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getTaxScheme(): ?TaxScheme
+    public function getTaxScheme()
     {
         return $this->taxScheme;
     }
@@ -106,7 +106,7 @@ class TaxCategory implements XmlSerializable
      * @param TaxScheme $taxScheme
      * @return TaxCategory
      */
-    public function setTaxScheme(?TaxScheme $taxScheme): TaxCategory
+    public function setTaxScheme(?TaxScheme $taxScheme)
     {
         $this->taxScheme = $taxScheme;
         return $this;
@@ -115,7 +115,7 @@ class TaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getTaxExemptionReason(): ?string
+    public function getTaxExemptionReason()
     {
         return $this->taxExemptionReason;
     }
@@ -124,7 +124,7 @@ class TaxCategory implements XmlSerializable
      * @param string $taxExemptionReason
      * @return TaxCategory
      */
-    public function setTaxExemptionReason(?string $taxExemptionReason): TaxCategory
+    public function setTaxExemptionReason(?string $taxExemptionReason)
     {
         $this->taxExemptionReason = $taxExemptionReason;
         return $this;
@@ -133,7 +133,7 @@ class TaxCategory implements XmlSerializable
     /**
      * @return string
      */
-    public function getTaxExemptionReasonCode(): ?string
+    public function getTaxExemptionReasonCode()
     {
         return $this->taxExemptionReasonCode;
     }
@@ -142,7 +142,7 @@ class TaxCategory implements XmlSerializable
      * @param string $taxExemptionReason
      * @return TaxCategory
      */
-    public function setTaxExemptionReasonCode(?string $taxExemptionReasonCode): TaxCategory
+    public function setTaxExemptionReasonCode(?string $taxExemptionReasonCode)
     {
         $this->taxExemptionReasonCode = $taxExemptionReasonCode;
         return $this;

@@ -42,7 +42,7 @@ class Contact implements XmlSerializable
      * @param string $telephone
      * @return Contact
      */
-    public function setTelephone(?string $telephone)
+    public function setTelephone(string $telephone)
     {
         $this->telephone = $telephone;
         return $this;
@@ -60,7 +60,7 @@ class Contact implements XmlSerializable
      * @param string $telefax
      * @return Contact
      */
-    public function setTelefax(?string $telefax)
+    public function setTelefax(string $telefax)
     {
         $this->telefax = $telefax;
         return $this;
@@ -78,7 +78,7 @@ class Contact implements XmlSerializable
      * @param string $electronicMail
      * @return Contact
      */
-    public function setElectronicMail(?string $electronicMail)
+    public function setElectronicMail(string $electronicMail)
     {
         $this->electronicMail = $electronicMail;
         return $this;

@@ -18,7 +18,7 @@ class ClassifiedTaxCategory implements XmlSerializable
     private $schemeID;
     private $schemeName;
 
-    public const UNCL5305 = 'UNCL5305';
+    const UNCL5305 = 'UNCL5305';
 
     /**
      * @return string
@@ -46,7 +46,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param string $id
      * @return ClassifiedTaxCategory
      */
-    public function setId(?string $id)
+    public function setId(string $id)
     {
         $this->id = $id;
         return $this;
@@ -64,7 +64,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param string $name
      * @return ClassifiedTaxCategory
      */
-    public function setName(?string $name)
+    public function setName(string $name)
     {
         $this->name = $name;
         return $this;
@@ -82,7 +82,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param float $percent
      * @return ClassifiedTaxCategory
      */
-    public function setPercent(?float $percent)
+    public function setPercent(float $percent)
     {
         $this->percent = $percent;
         return $this;
@@ -100,7 +100,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param TaxScheme $taxScheme
      * @return ClassifiedTaxCategory
      */
-    public function setTaxScheme(?TaxScheme $taxScheme)
+    public function setTaxScheme(TaxScheme $taxScheme)
     {
         $this->taxScheme = $taxScheme;
         return $this;
@@ -118,7 +118,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param string $id
      * @return ClassifiedTaxCategory
      */
-    public function setSchemeID(?string $id)
+    public function setSchemeID(string $id)
     {
         $this->schemeID = $id;
         return $this;
@@ -136,7 +136,7 @@ class ClassifiedTaxCategory implements XmlSerializable
      * @param string $name
      * @return ClassifiedTaxCategory
      */
-    public function setSchemeName(?string $name)
+    public function setSchemeName(string $name)
     {
         $this->schemeName = $name;
         return $this;

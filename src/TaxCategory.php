@@ -20,7 +20,7 @@ class TaxCategory implements XmlSerializable
     private $taxExemptionReason;
     private $taxExemptionReasonCode;
 
-    public const UNCL5305 = 'UNCL5305';
+    const UNCL5305 = 'UNCL5305';
 
     /**
      * @return string
@@ -49,7 +49,7 @@ class TaxCategory implements XmlSerializable
      * @param array $attributes
      * @return TaxCategory
      */
-    public function setId(?string $id, $attributes = null)
+    public function setId(string $id, $attributes = null)
     {
         $this->id = $id;
         if (isset($attributes)) {
@@ -70,7 +70,7 @@ class TaxCategory implements XmlSerializable
      * @param string $name
      * @return TaxCategory
      */
-    public function setName(?string $name)
+    public function setName(string $name)
     {
         $this->name = $name;
         return $this;
@@ -88,7 +88,7 @@ class TaxCategory implements XmlSerializable
      * @param string $percent
      * @return TaxCategory
      */
-    public function setPercent(?float $percent)
+    public function setPercent(float $percent)
     {
         $this->percent = $percent;
         return $this;
@@ -106,7 +106,7 @@ class TaxCategory implements XmlSerializable
      * @param TaxScheme $taxScheme
      * @return TaxCategory
      */
-    public function setTaxScheme(?TaxScheme $taxScheme)
+    public function setTaxScheme(TaxScheme $taxScheme)
     {
         $this->taxScheme = $taxScheme;
         return $this;
@@ -124,7 +124,7 @@ class TaxCategory implements XmlSerializable
      * @param string $taxExemptionReason
      * @return TaxCategory
      */
-    public function setTaxExemptionReason(?string $taxExemptionReason)
+    public function setTaxExemptionReason(string $taxExemptionReason)
     {
         $this->taxExemptionReason = $taxExemptionReason;
         return $this;
@@ -142,7 +142,7 @@ class TaxCategory implements XmlSerializable
      * @param string $taxExemptionReason
      * @return TaxCategory
      */
-    public function setTaxExemptionReasonCode(?string $taxExemptionReasonCode)
+    public function setTaxExemptionReasonCode(string $taxExemptionReasonCode)
     {
         $this->taxExemptionReasonCode = $taxExemptionReasonCode;
         return $this;

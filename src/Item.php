@@ -25,7 +25,7 @@ class Item implements XmlSerializable
      * @param string $description
      * @return Item
      */
-    public function setDescription(?string $description)
+    public function setDescription(string $description)
     {
         $this->description = $description;
         return $this;
@@ -43,7 +43,7 @@ class Item implements XmlSerializable
      * @param mixed $name
      * @return Item
      */
-    public function setName(?string $name)
+    public function setName(string $name)
     {
         $this->name = $name;
         return $this;
@@ -61,7 +61,7 @@ class Item implements XmlSerializable
      * @param mixed $sellersItemIdentification
      * @return Item
      */
-    public function setSellersItemIdentification(?string $sellersItemIdentification)
+    public function setSellersItemIdentification(string $sellersItemIdentification)
     {
         $this->sellersItemIdentification = $sellersItemIdentification;
         return $this;
@@ -79,7 +79,7 @@ class Item implements XmlSerializable
      * @param mixed $buyersItemIdentification
      * @return Item
      */
-    public function setBuyersItemIdentification(?string $buyersItemIdentification)
+    public function setBuyersItemIdentification(string $buyersItemIdentification)
     {
         $this->buyersItemIdentification = $buyersItemIdentification;
         return $this;
@@ -97,7 +97,7 @@ class Item implements XmlSerializable
      * @param ClassifiedTaxCategory $classifiedTaxCategory
      * @return Item
      */
-    public function setClassifiedTaxCategory(?ClassifiedTaxCategory $classifiedTaxCategory)
+    public function setClassifiedTaxCategory(ClassifiedTaxCategory $classifiedTaxCategory)
     {
         $this->classifiedTaxCategory = $classifiedTaxCategory;
         return $this;

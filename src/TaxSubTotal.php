@@ -26,7 +26,7 @@ class TaxSubTotal implements XmlSerializable
      * @param mixed $taxableAmount
      * @return TaxSubTotal
      */
-    public function setTaxableAmount(?float $taxableAmount)
+    public function setTaxableAmount(float $taxableAmount)
     {
         $this->taxableAmount = $taxableAmount;
         return $this;
@@ -44,7 +44,7 @@ class TaxSubTotal implements XmlSerializable
      * @param mixed $taxAmount
      * @return TaxSubTotal
      */
-    public function setTaxAmount(?float $taxAmount)
+    public function setTaxAmount(float $taxAmount)
     {
         $this->taxAmount = $taxAmount;
         return $this;
@@ -80,7 +80,7 @@ class TaxSubTotal implements XmlSerializable
      * @param float $percent
      * @return TaxSubTotal
      */
-    public function setPercent(?float $percent)
+    public function setPercent(float $percent)
     {
         $this->percent = $percent;
         return $this;

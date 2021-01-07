@@ -24,7 +24,7 @@ class TaxTotal implements XmlSerializable
      * @param mixed $taxAmount
      * @return TaxTotal
      */
-    public function setTaxAmount(?float $taxAmount)
+    public function setTaxAmount(float $taxAmount)
     {
         $this->taxAmount = $taxAmount;
         return $this;

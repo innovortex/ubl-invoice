@@ -26,7 +26,7 @@ class Address implements XmlSerializable
      * @param string $streetName
      * @return Address
      */
-    public function setStreetName(?string $streetName)
+    public function setStreetName(string $streetName)
     {
         $this->streetName = $streetName;
         return $this;
@@ -44,7 +44,7 @@ class Address implements XmlSerializable
      * @param string $additionalStreetName
      * @return Address
      */
-    public function setAdditionalStreetName(?string $additionalStreetName)
+    public function setAdditionalStreetName(string $additionalStreetName)
     {
         $this->additionalStreetName = $additionalStreetName;
         return $this;
@@ -63,7 +63,7 @@ class Address implements XmlSerializable
      * @param string $buildingNumber
      * @return Address
      */
-    public function setBuildingNumber(?string $buildingNumber)
+    public function setBuildingNumber(string $buildingNumber)
     {
         $this->buildingNumber = $buildingNumber;
         return $this;
@@ -81,7 +81,7 @@ class Address implements XmlSerializable
      * @param string $cityName
      * @return Address
      */
-    public function setCityName(?string $cityName)
+    public function setCityName(string $cityName)
     {
         $this->cityName = $cityName;
         return $this;
@@ -99,7 +99,7 @@ class Address implements XmlSerializable
      * @param string $postalZone
      * @return Address
      */
-    public function setPostalZone(?string $postalZone)
+    public function setPostalZone(string $postalZone)
     {
         $this->postalZone = $postalZone;
         return $this;

@@ -31,7 +31,7 @@ class PaymentMeans implements XmlSerializable
      * @param string $paymentMeansCode
      * @return PaymentMeans
      */
-    public function setPaymentMeansCode(?int $paymentMeansCode, $attributes = null)
+    public function setPaymentMeansCode(int $paymentMeansCode, $attributes = null)
     {
         $this->paymentMeansCode = $paymentMeansCode;
         if (isset($attributes)) {
@@ -52,7 +52,7 @@ class PaymentMeans implements XmlSerializable
      * @param DateTime $paymentDueDate
      * @return PaymentMeans
      */
-    public function setPaymentDueDate(?DateTime $paymentDueDate)
+    public function setPaymentDueDate(DateTime $paymentDueDate)
     {
         $this->paymentDueDate = $paymentDueDate;
         return $this;
@@ -70,7 +70,7 @@ class PaymentMeans implements XmlSerializable
      * @param string $instructionId
      * @return PaymentMeans
      */
-    public function setInstructionId(?string $instructionId)
+    public function setInstructionId(string $instructionId)
     {
         $this->instructionId = $instructionId;
         return $this;
@@ -88,7 +88,7 @@ class PaymentMeans implements XmlSerializable
      * @param string $instructionNote
      * @return PaymentMeans
      */
-    public function setInstructionNote(?string $instructionNote)
+    public function setInstructionNote(string $instructionNote)
     {
         $this->instructionNote = $instructionNote;
         return $this;
@@ -106,7 +106,7 @@ class PaymentMeans implements XmlSerializable
      * @param string $paymentId
      * @return PaymentMeans
      */
-    public function setPaymentId(?string $paymentId)
+    public function setPaymentId(string $paymentId)
     {
         $this->paymentId = $paymentId;
         return $this;
@@ -124,7 +124,7 @@ class PaymentMeans implements XmlSerializable
      * @param mixed $payeeFinancialAccount
      * @return PaymentMeans
      */
-    public function setPayeeFinancialAccount(?PayeeFinancialAccount $payeeFinancialAccount)
+    public function setPayeeFinancialAccount(PayeeFinancialAccount $payeeFinancialAccount)
     {
         $this->payeeFinancialAccount = $payeeFinancialAccount;
         return $this;

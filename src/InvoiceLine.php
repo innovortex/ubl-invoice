@@ -30,7 +30,7 @@ class InvoiceLine implements XmlSerializable
      * @param string $id
      * @return InvoiceLine
      */
-    public function setId(?string $id)
+    public function setId(string $id)
     {
         $this->id = $id;
         return $this;
@@ -48,7 +48,7 @@ class InvoiceLine implements XmlSerializable
      * @param float $invoicedQuantity
      * @return InvoiceLine
      */
-    public function setInvoicedQuantity(?float $invoicedQuantity)
+    public function setInvoicedQuantity(float $invoicedQuantity)
     {
         $this->invoicedQuantity = $invoicedQuantity;
         return $this;
@@ -66,7 +66,7 @@ class InvoiceLine implements XmlSerializable
      * @param float $lineExtensionAmount
      * @return InvoiceLine
      */
-    public function setLineExtensionAmount(?float $lineExtensionAmount)
+    public function setLineExtensionAmount(float $lineExtensionAmount)
     {
         $this->lineExtensionAmount = $lineExtensionAmount;
         return $this;
@@ -84,7 +84,7 @@ class InvoiceLine implements XmlSerializable
      * @param TaxTotal $taxTotal
      * @return InvoiceLine
      */
-    public function setTaxTotal(?TaxTotal $taxTotal)
+    public function setTaxTotal(TaxTotal $taxTotal)
     {
         $this->taxTotal = $taxTotal;
         return $this;
@@ -102,7 +102,7 @@ class InvoiceLine implements XmlSerializable
      * @param string $note
      * @return InvoiceLine
      */
-    public function setNote(?string $note)
+    public function setNote(string $note)
     {
         $this->note = $note;
         return $this;
@@ -120,7 +120,7 @@ class InvoiceLine implements XmlSerializable
      * @param InvoicePeriod $invoicePeriod
      * @return InvoiceLine
      */
-    public function setInvoicePeriod(?InvoicePeriod $invoicePeriod)
+    public function setInvoicePeriod(InvoicePeriod $invoicePeriod)
     {
         $this->invoicePeriod = $invoicePeriod;
         return $this;
@@ -156,7 +156,7 @@ class InvoiceLine implements XmlSerializable
      * @param Price $price
      * @return InvoiceLine
      */
-    public function setPrice(?Price $price)
+    public function setPrice(Price $price)
     {
         $this->price = $price;
         return $this;
@@ -174,7 +174,7 @@ class InvoiceLine implements XmlSerializable
      * @param string $unitCode
      * @return InvoiceLine
      */
-    public function setUnitCode(?string $unitCode)
+    public function setUnitCode(string $unitCode)
     {
         $this->unitCode = $unitCode;
         return $this;
@@ -192,7 +192,7 @@ class InvoiceLine implements XmlSerializable
      * @param string $accountingCostCode
      * @return InvoiceLine
      */
-    public function setAccountingCostCode(?string $accountingCostCode)
+    public function setAccountingCostCode(string $accountingCostCode)
     {
         $this->accountingCostCode = $accountingCostCode;
         return $this;

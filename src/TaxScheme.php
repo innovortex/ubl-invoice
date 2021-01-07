@@ -41,7 +41,7 @@ class TaxScheme implements XmlSerializable
      * @param string $taxTypeCode
      * @return TaxScheme
      */
-    public function setTaxTypeCode(?string $taxTypeCode)
+    public function setTaxTypeCode(string $taxTypeCode)
     {
         $this->taxTypeCode = $taxTypeCode;
         return $this;
@@ -59,7 +59,7 @@ class TaxScheme implements XmlSerializable
      * @param string $name
      * @return TaxScheme
      */
-    public function setName(?string $name)
+    public function setName(string $name)
     {
         $this->name = $name;
         return $this;

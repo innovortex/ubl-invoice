@@ -27,7 +27,7 @@ class Party implements XmlSerializable
      * @param string $name
      * @return Party
      */
-    public function setName(?string $name)
+    public function setName(string $name)
     {
         $this->name = $name;
         return $this;
@@ -45,7 +45,7 @@ class Party implements XmlSerializable
      * @param Address $postalAddress
      * @return Party
      */
-    public function setPostalAddress(?Address $postalAddress)
+    public function setPostalAddress(Address $postalAddress)
     {
         $this->postalAddress = $postalAddress;
         return $this;
@@ -63,7 +63,7 @@ class Party implements XmlSerializable
      * @param LegalEntity $legalEntity
      * @return Party
      */
-    public function setLegalEntity(?LegalEntity $legalEntity)
+    public function setLegalEntity(LegalEntity $legalEntity)
     {
         $this->legalEntity = $legalEntity;
         return $this;
@@ -81,7 +81,7 @@ class Party implements XmlSerializable
      * @param Address $physicalLocation
      * @return Party
      */
-    public function setPhysicalLocation(?Address $physicalLocation)
+    public function setPhysicalLocation(Address $physicalLocation)
     {
         $this->physicalLocation = $physicalLocation;
         return $this;
@@ -117,7 +117,7 @@ class Party implements XmlSerializable
      * @param Contact $contact
      * @return Party
      */
-    public function setContact(?Contact $contact)
+    public function setContact(Contact $contact)
     {
         $this->contact = $contact;
         return $this;
@@ -135,7 +135,7 @@ class Party implements XmlSerializable
      * @param Contact $contact
      * @return Party
      */
-    public function setPartyIdentification(?PartyIdentification $identification)
+    public function setPartyIdentification(PartyIdentification $identification)
     {
         $this->partyIdentification = $identification;
         return $this;

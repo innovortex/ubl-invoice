@@ -51,7 +51,7 @@ class Invoice implements XmlSerializable
      * eg. '2.0', '2.1', '2.2', ...
      * @return Invoice
      */
-    public function setUBLVersionID(?string $UBLVersionID)
+    public function setUBLVersionID(string $UBLVersionID)
     {
         $this->UBLVersionID = $UBLVersionID;
         return $this;
@@ -69,7 +69,7 @@ class Invoice implements XmlSerializable
      * @param mixed $id
      * @return Invoice
      */
-    public function setId(?string $id)
+    public function setId(string $id)
     {
         $this->id = $id;
         return $this;
@@ -79,7 +79,7 @@ class Invoice implements XmlSerializable
      * @param mixed $customizationID
      * @return Invoice
      */
-    public function setCustomizationID(?string $id)
+    public function setCustomizationID(string $id)
     {
         $this->customizationID = $id;
         return $this;
